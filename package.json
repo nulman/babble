@@ -1,0 +1,22 @@
+{
+  "name": "babble",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node server\\main.js test",
+    "start": "node server\\main.js start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "3.5.3",
+    "body-parser": "1.18.1",
+    "sinon": "3.3.0",
+    "chai": "4.1.2",
+    "express": "^4.15.4"
+  }
+}

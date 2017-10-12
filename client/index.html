@@ -1,0 +1,67 @@
+<!doctype html>
+<!-- <html class="no-js" lang=""> -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>"Vegans - Babble"</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="scripts/main.js" type="text/javascript" defer></script> 
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    </head>
+    <body>
+            <header>
+				<img src="images/logo.png" id='logo' alt="Babble Logo">
+			</header>
+			<main id='container'>
+                <!-- The Modal -->
+                <div class="modal" id="registration-modal">
+                    <div class="modal-content">
+                    <h1>who are you?</h1>
+                    <br>
+                      <form id='registration-input'>
+                        <label for='reg-name'>Full Name: </label>
+                        <input name='name' type="text"  id="reg-name">
+                        <br>
+                        <label for='reg-email'>Email: </label>
+                        <input name='email' type="text"  id="reg-email">
+                        <br><br>
+                        <button aria-label='stay-anonymous' id='anonymous-button'>Stay Anonymous</button>
+                        <button aria-label='save' id='register-button'>Save</button>
+                        </form> 
+                    </div>
+                </div>
+				<!-- nav bar -->
+				<nav class='left-margin'></nav>
+				<!-- messages -->
+				<div class="message-board">
+					<!-- statistics -->
+					<dl class="board-stats">
+						<dt hidden>Number of messages</dt>
+						<dd><img src="images/messages-icon.png" alt="# of messages"> <p id="message-count"></p></dd>
+						<dt hidden>Number of users</dt>
+						<dd><img src="images/users-icon.png" alt="# of users"> <p id="user-count"></p></dd>
+					</dl>
+					<!-- title -->
+					<h1>Vegans</h1>
+					<!-- messages container -->
+					<ol class='babble-content' id='chat'>
+					</ol>
+					<!-- new message input -->
+					<form id='message-input'>
+						<label for='val' class='hidden'>New message text area</label>
+						<textarea name="submit-message" id="val"></textarea>
+						<button aria-label='submit' id='submit-button'>
+							<img src="images/submit.PNG" alt="submit" />
+						</button>
+					</form> 
+				</div>
+			</main>
+    </body>
+</html>
