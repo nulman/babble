@@ -1,0 +1,223 @@
+html,body{
+	margin:0;
+	padding:0;
+	height:100%;
+    font-family: 'Nunito';
+}
+header{
+	height: 100px;
+	background-color: #353744;
+	color: white;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  color: gray;
+}​
+
+
+
+#logo{
+	float:left;
+}
+
+.message-board{
+	overflow-y: scroll;
+	background-color: #f6f6f6;
+}
+
+.board-stats{
+    float:right;
+}
+
+.board-stats > dd{
+	float:left;
+}
+
+dd > p, img{
+    float: left;
+    margin: 0;
+}
+
+.left-margin{
+	background-color: #61d290;
+	width: 10%;
+	float:left;
+}
+
+.babble-content{
+	
+}
+
+#submit-button{
+	border: 0; 
+	background: transparent;
+    cursor:pointer;
+    float:right;
+}
+
+.message-text{
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	padding: 5px;
+	float: left;
+	background-color: white;
+    min-width:200px;
+	max-width:600px;
+    overflow-wrap: break-word
+}
+
+.profile-pic{
+	border-radius: 100px;
+	width: 50px;
+	height:50px;
+	float:left;
+	margin: 10px;
+}
+
+.name{
+	font-weight: bold;
+	float: left;
+	margin-right: 15px;
+}
+
+.time{
+	float:left;
+	color:grey;
+}
+
+#chat{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#chat li{
+	display: block;
+	float: left;
+    clear: left;
+	padding: 10px;
+}
+
+.message-text:focus{
+	background-color: lightgray;
+}
+
+#chat li:hover > .message-text{
+    background-color: lightgray;
+}
+
+#message-input{
+	position:fixed;
+	bottom:0;
+	width: 100%;
+	padding:20px;
+	max-height:300px;
+	background-color:white;
+    display: flex;
+	border-top: solid 1px lightgray;
+}
+
+#message-input > textarea{
+	border: none;
+    flex: 0.8;
+    min-height: 70px;
+    float: left;
+	overflow-y: scroll;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 350px; /* Could be more or less, depending on screen size */
+}
+
+.delete{
+	float: right;
+	cursor: pointer;
+    opacity: 0;
+	border: none;
+	background-color: transparent;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.message-text:hover > .delete{
+    opacity: 1;
+}
+
+.message-text:focus > .delete{
+    opacity: 1;
+}
+
+
+#reg-email,#reg-name{
+    border-radius: 10px;
+    border: solid lightgray 1px;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+#register-button,#anonymous-button{
+    padding: 7px;
+    border:none;
+    min-width: 100px;
+}
+
+#register-button{
+    background: -webkit-linear-gradient(top, #3ed310 0%,#0ea018 100%); 
+    color: white;
+}
+
+#anonymous-button{
+    background: -webkit-linear-gradient(top, #fafafa 0%,#cccccc 100%); 
+    color: black;
+}
+
+input,text-area,select{
+    font-family: 'Nunito';
+}
+
+.hidden{
+    display:none;
+}
+
+/*mobile design*/
+@media (max-width:638px) {
+  .left-margin{
+	display: none;
+  }
+  #container, .message-board {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  #container{
+	display:flex;
+  }
+
+}
